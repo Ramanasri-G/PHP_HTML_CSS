@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Course Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Course Registration Form</h2>
+
+    <form action="register.php" method="POST">
+
+        <label for="name">Student Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="mobile">Mobile Number</label>
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="Enter 10-digit mobile number" required>
+
+        <label for="course">Select Course</label>
+        <select id="course" name="course" required>
+            <option value="">-- Select Course --</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Python Programming">Python Programming</option>
+            <option value="Java Programming">Java Programming</option>
+            <option value="Data Science">Data Science</option>
+        </select>
+
+        <label>Training Mode</label>
+
+        <div class="radio">
+            <label><input type="radio" name="mode" value="Online" required> Online</label>
+            <label><input type="radio" name="mode" value="Offline"> Offline</label>
+        </div>
+
+        <input type="submit" value="Register">
+
+    </form>
+
+</div>
+
+</body>
+</html>
+
