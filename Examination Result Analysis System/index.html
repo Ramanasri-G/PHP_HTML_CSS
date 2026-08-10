@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Examination Result Analysis System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Examination Result Analysis</h2>
+
+<form action="result.php" method="post">
+
+<label>Student Name</label>
+<input type="text" name="name" required>
+
+<label>Register Number</label>
+<input type="text" name="regno" required>
+
+<label>Total Marks Obtained</label>
+<input type="number" name="marks" min="0" max="500" required>
+
+<label>Maximum Marks</label>
+<input type="number" name="total" value="500" min="1" required>
+
+<input type="submit" value="Analyze Result">
+
+</form>
+
+</div>
+
+</body>
+</html>
+
